@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Depósito USDT</title>
+    <link rel="stylesheet" href="./css/Recarga.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body>
+    <div class="container">
+        <h2>Cuenta de Depósito</h2>
+        
+        <div class="qr-section">
+            <img src="./Imagen/qr.jpeg" alt="Código QR" class="qr-img">
+            <p>Escanea el código o copia el código para depositar.</p>
+            
+            <div class="copy-container">
+                <input type="text" id="direccionBinance" value="TWQ4GWkA8BFSBaGpthqWQYPinGrewTN4HX" readonly>
+                <button onclick="copiarTexto()">Copiar</button>
+            </div>
+        </div>
+
+        <form class="formulario">
+            <label for="monto">Monto depositado (USDT):</label>
+            <input type="number" id="monto" name="monto" placeholder="Ej: 50.00" required>
+
+            <button type="submit">Confirmar Depósito</button>
+            <p><a href="index.html" class="btn-depositar" target="_blank">Regresar</a></p>
+        </form>
+    </div>
+
+    <script>
+        function copiarTexto() {
+            const input = document.getElementById("direccionBinance");
+            input.select();
+            document.execCommand("copy");
+            alert("Dirección copiada: " + input.value);
+        }
+    </script>
+</body>
+</html>

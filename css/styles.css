@@ -1,0 +1,246 @@
+/* Estilos generales */
+
+
+header 
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Incluye el padding y el borde en el tamaño total */
+}
+
+@media (max-width: 600px) {
+    body {
+        background-color: lightblue;
+    }
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+.contenedor {
+    display: flex;
+    justify-content: center; /* Centra los botones horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    gap: 10px; /* Espacio entre los botones */
+    background-color: #000000; /* Color de fondo */
+    padding: 0px; /* Ajusta el padding */
+    border-radius: 10px; /* Opcional: redondea las esquinas */
+    width: 100%; /* O un valor fijo como 800px */
+}
+
+
+.boton {
+    display: flex;
+    flex-direction: column; /* Coloca la imagen arriba y el texto abajo */
+    align-items: center; /* Centra la imagen y el texto */
+    width: 150px; /* Ancho fijo para todos los botones */
+    height: 75px; /* Altura fija para todos los botones */
+    margin: 25px 0; /* Ajusta el valor según lo necesites */
+}
+
+
+body {
+    background-color: #f5f5f5; /* Cambia este valor al color que desees */
+    margin: 0; /* Elimina el margen por defecto */
+    font-family: Arial, sans-serif; /* Cambia la fuente si lo deseas */
+    padding: 0;
+}
+
+    
+.imagen-pequeña {
+    position: absolute;  /* Para colocar la imagen en la esquina */
+    top: 0px;  /* Distancia desde la parte superior */
+    left: 0px;  /* Distancia desde la parte izquierda */
+    width: 100px;  /* Tamaño de la imagen */
+    height: 100px;  /* Mantén la altura igual al ancho para ser un círculo */
+    border-radius: 100%; /* Hace la imagen redonda */
+
+}
+
+
+
+
+.recar-ga {
+    width: 75px; /* Ajusta el ancho según necesites */
+    height: 75px; /* Ajusta la altura según necesites */
+    object-fit: cover; /* Asegura que la imagen se recorte sin deformarse */
+    cursor: pointer;
+    border-radius: 100%; /* Hace la imagen redonda */
+}
+a {
+    text-decoration: none; /* Elimina la línea de subrayado */
+    color: inherit; /* Mantiene el color del texto original */
+}
+
+
+.re {
+    text-align: center;
+    font-weight: bold;
+    margin-top: 1px; /* Espacio uniforme entre la imagen y el texto */
+    width: 100%;
+}
+
+.reca-rga {
+    text-align: center; /* Centra el texto debajo de la imagen */
+    font-family: 'Optima', sans-serif; /* Cambia 'Arial' por la fuente deseada */
+    border: 5px solid #000000; /* Borde */
+    border-radius: 5px; /* Bordes redondeados */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Sombra del texto */
+    margin: 20px; /* Margen externo */
+    font-weight: bold; /* Aplica negrita */
+}
+
+
+
+.carousel-container {
+    width: 1000px; /* Ancho del contenedor */
+    height: 280px; /* Altura del contenedor */
+    overflow: hidden;
+    border: 3px solid #070707;
+    position: relative;
+    margin: 0 auto; /* Centrar el contenedor */
+    max-width: 100%; /* Asegura que el contenedor no exceda el ancho de la pantalla */
+    border-radius: 15px; /* Cambia el valor según el grado de redondez que desees */
+}
+
+.carousel {
+    display: flex;
+    transition: transform 2s ease; /* Suaviza la transición al mover */
+    width: 400%; /* Ajustado 4 para  imágenes */
+}
+
+.carousel img {
+    width: 33.33%; /* Cada imagen ocupa 33.33% del ancho del carrusel (100% / 3) */
+    height: auto; /* Mantiene la proporción de las imágenes */
+    object-fit: cover; /* Asegura que las imágenes no se distorsionen */
+    display: block; /* Elimina el espacio debajo de las imágenes */
+}
+
+
+
+@keyframes slide {
+    0% { transform: translateX(0%); }
+    33% { transform: translateX(-100%); }
+    66% { transform: translateX(-200%); }
+    100% { transform: translateX(0%); }
+}
+
+
+
+    
+
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+section {
+    padding: 20px;
+}
+
+
+.tarjeta {
+    display: flex;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+    overflow: hidden;
+    padding: 10px;
+}
+
+.imagen-tarjeta {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+    margin-right: 15px;
+}
+
+.info h3 {
+    margin: 0 0 10px 0;
+}
+
+.info p {
+    margin: 4px 0;
+}
+
+.verde {
+    color: #28a745;
+}
+
+.btn-invertir {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    margin-top: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-invertir:hover {
+    background-color: #0056b3;
+}
+
+
+.contenedor-principal {
+    margin-bottom: 100px; /* Ajusta este valor según el espacio que desees */
+}  
+
+    .info-container {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+}
+
+.info-container h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.info-container h3 {
+    font-size: 20px;
+    color: #666;
+    margin-top: 15px;
+}
+
+.info-container p {
+    color: #555;
+    line-height: 1.6;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+footer {
+    text-align: center;
+    background: #333;
+    color: white;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 1; /* Un z-index más bajo que el contenedor principal */
+    margin-bottom: 0px; /* Espacio entre la tarjeta y el footer */
+}
+

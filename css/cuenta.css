@@ -1,0 +1,121 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+}
+@media (max-width: 600px) {
+    body {
+        background-color: lightblue;
+    }
+}
+
+
+.fondo-container {
+    max-width: 400px;
+    margin: 30px auto;
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.fondo-info {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #fff;
+}
+
+.fondo-text p {
+    margin: 0;
+    color: gray;
+    font-size: 14px;
+}
+
+.fondo-text h2 {
+    margin: 5px 0 0 0;
+    font-size: 24px;
+    color: #333;
+}
+
+.fondo-botones {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+
+    
+}
+.A {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+    text-decoration: none; /* Sin subrayado */
+    
+}
+
+.btn-recargar {
+    background-color: #3e80ff;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 8px 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    text-decoration: none; /* Sin subrayado */
+}
+
+.btn-retirar {
+    background-color: #f15a29;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 8px 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    text-decoration: none; /* Sin subrayado */
+}
+.btn-regresar {
+    background-color: #0a8533;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 8px 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    text-decoration: none; /* Sin subrayado */
+}
+
+.btn-recargar:hover {
+    background-color: #2e6dc1; /* Color al pasar el mouse */
+}
+
+.btn-retirar:hover {
+    background-color: #d14422; /* Color al pasar el mouse */
+}
+
+.acciones-rapidas {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-top: 1px solid #ddd;
+    text-decoration: none; /* Sin subrayado */
+}
+
+.accion {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    text-decoration: none; /* Sin subrayado */
+}
+img {
+    max-width: 100%;
+    height: auto;
+}

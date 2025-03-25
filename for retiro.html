@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cuenta Retiro</title>
+  <link rel="stylesheet" href="./css/estilos.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+
+
+<body>
+    
+    
+    
+
+    <div class="container3">
+    <header class="header">Cuenta Retiro</header>
+    <div class="subtext">Todos los Domingos</div>
+
+    <div class="balance">
+    <p>Balance total</p>
+    <span>0.00 USDT</span>
+    </div>
+
+    <div class="method-select">
+    <button id="btn-trc" class="active" onclick="seleccionarMetodo('TRC20')">TRC20-USDT</button>
+    </div>
+
+    <form id="withdraw-form">
+    <div class="input-group">
+        <input type="number" min="5.00" max="300000.00" placeholder="Cuota 5.00 - 300000.00" required>
+    </div> 
+
+    <div class="input-group">
+        <input type="text" placeholder="Dirección de retiro" required>
+    </div>
+
+    <div class="input-group">
+        <input type="password" placeholder="Contraseña" required>
+    </div>
+
+
+    <button type="submit" class="confirm-btn">Confirmar</button>
+
+
+    
+    </form>
+
+    <p><a href="index.html"><button type="submit" class="confirm-btn">Regresar</button></a></p>
+
+    <p><div class="note">
+    <p>Su retiro llegará dentro de 15 minutos.</p>
+    </div>
+</p>
+
+    <script src=".script.js"></script>
+</body>
+</html>
