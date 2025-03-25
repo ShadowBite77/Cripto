@@ -56,7 +56,7 @@ body {
     top: 0px;  /* Distancia desde la parte superior */
     left: 0px;  /* Distancia desde la parte izquierda */
     width: 100px;  /* Tamaño de la imagen */
-    height: 100px;  /* Mantén la altura igual al ancho para ser un círculo */
+    max-height: 100px;  /* Mantén la altura igual al ancho para ser un círculo */
     border-radius: 100%; /* Hace la imagen redonda */
 
 }
@@ -66,7 +66,7 @@ body {
 
 .recar-ga {
     width: 75px; /* Ajusta el ancho según necesites */
-    height: 75px; /* Ajusta la altura según necesites */
+    max-height: 75px; /* Ajusta la altura según necesites */
     object-fit: cover; /* Asegura que la imagen se recorte sin deformarse */
     cursor: pointer;
     border-radius: 100%; /* Hace la imagen redonda */
@@ -98,7 +98,7 @@ a {
 
 .carousel-container {
     width: 1000px; /* Ancho del contenedor */
-    height: 280px; /* Altura del contenedor */
+    max-height: 280px; /* Altura del contenedor */
     overflow: hidden;
     border: 3px solid #070707;
     position: relative;
