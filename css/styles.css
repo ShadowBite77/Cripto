@@ -190,6 +190,9 @@ body {
     .carousel-container {
         height: 150px;
     }
+    .contenedor-principal {
+    margin-bottom: 100px; /* Ajusta este valor según el espacio que desees */
+}  
     
     .footer-links {
         flex-direction: column;
