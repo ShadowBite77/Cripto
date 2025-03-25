@@ -97,6 +97,99 @@ body {
     object-fit: cover;
 }
 
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+section {
+    padding: 20px;
+}
+
+
+.tarjeta {
+    display: flex;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+    overflow: hidden;
+    padding: 10px;
+}
+
+.imagen-tarjeta {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+    margin-right: 15px;
+}
+
+.info h3 {
+    margin: 0 0 10px 0;
+}
+
+.info p {
+    margin: 4px 0;
+}
+
+.verde {
+    color: #28a745;
+}
+
+.btn-invertir {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    margin-top: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-invertir:hover {
+    background-color: #0056b3;
+}
+
+
+.contenedor-principal {
+    margin-bottom: 100px; /* Ajusta este valor según el espacio que desees */
+}  
+
+    .info-container {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+}
+
+.info-container h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.info-container h3 {
+    font-size: 20px;
+    color: #666;
+    margin-top: 15px;
+}
+
+.info-container p {
+    color: #555;
+    line-height: 1.6;
+}
 /* Footer */
 .main-footer {
     background-color: #333;
