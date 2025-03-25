@@ -199,3 +199,47 @@ body {
         margin: 5px 0;
     }
 }
+/* Estilos de la pagina inversion  */
+.tarjeta {
+    display: flex;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+    overflow: hidden;
+    padding: 10px;
+}
+
+.imagen-tarjeta {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+    margin-right: 15px;
+}
+
+.info h3 {
+    margin: 0 0 10px 0;
+}
+
+.info p {
+    margin: 4px 0;
+}
+
+.verde {
+    color: #28a745;
+}
+
+.btn-invertir {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    margin-top: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-invertir:hover {
+    background-color: #0056b3;
+}
+
