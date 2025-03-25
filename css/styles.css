@@ -1,159 +1,205 @@
 /* Estilos generales */
-
-
-header 
-
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box; /* Incluye el padding y el borde en el tamaño total */
+    box-sizing: border-box;
 }
-
-@media (max-width: 600px) {
-    body {
-        background-color: lightblue;
-    }
-}
-
-img {
-    max-width: 100%;
-    height: auto;
-}
-
-
-.contenedor {
-    display: flex;
-    justify-content: center; /* Centra los botones horizontalmente */
-    align-items: center; /* Centra verticalmente */
-    gap: 10px; /* Espacio entre los botones */
-    background-color: #000000; /* Color de fondo */
-    padding: 0px; /* Ajusta el padding */
-    border-radius: 10px; /* Opcional: redondea las esquinas */
-    width: 100%; /* O un valor fijo como 800px */
-}
-
-
-.boton {
-    display: flex;
-    flex-direction: column; /* Coloca la imagen arriba y el texto abajo */
-    align-items: center; /* Centra la imagen y el texto */
-    width: 150px; /* Ancho fijo para todos los botones */
-    height: 75px; /* Altura fija para todos los botones */
-    margin: 25px 0; /* Ajusta el valor según lo necesites */
-}
-
 
 body {
-    background-color: #f5f5f5; /* Cambia este valor al color que desees */
-    margin: 0; /* Elimina el margen por defecto */
-    font-family: Arial, sans-serif; /* Cambia la fuente si lo deseas */
-    padding: 0;
+    background-color: #f5f5f5;
+    font-family: Arial, sans-serif;
+    padding-bottom: 60px; /* Espacio para el footer */
 }
 
-    
-.imagen-pequeña {
-    position: absolute;  /* Para colocar la imagen en la esquina */
-    top: 0px;  /* Distancia desde la parte superior */
-    left: 0px;  /* Distancia desde la parte izquierda */
-    width: 100px;  /* Tamaño de la imagen */
-    height: 100px;  /* Mantén la altura igual al ancho para ser un círculo */
-    border-radius: 100%; /* Hace la imagen redonda */
-
+/* Header */
+.main-header {
+    background-color: #000000;
+    padding: 10px;
+    position: relative;
 }
 
-
-
-
-.recar-ga {
-    width: 75px; /* Ajusta el ancho según necesites */
-    height: 75px; /* Ajusta la altura según necesites */
-    object-fit: cover; /* Asegura que la imagen se recorte sin deformarse */
-    cursor: pointer;
-    border-radius: 100%; /* Hace la imagen redonda */
-}
-a {
-    text-decoration: none; /* Elimina la línea de subrayado */
-    color: inherit; /* Mantiene el color del texto original */
+.header-logo {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    z-index: 10;
 }
 
+/* Navegación principal */
+.main-nav {
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+}
 
-.re {
-    text-align: center;
-    font-weight: bold;
-    margin-top: 1px; /* Espacio uniforme entre la imagen y el texto */
+.nav-buttons-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
     width: 100%;
+    max-width: 800px;
+    margin-left: 80px; /* Compensa el logo */
 }
 
-.reca-rga {
-    text-align: center; /* Centra el texto debajo de la imagen */
-    font-family: 'Optima', sans-serif; /* Cambia 'Arial' por la fuente deseada */
-    border: 5px solid #000000; /* Borde */
-    border-radius: 5px; /* Bordes redondeados */
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Sombra del texto */
-    margin: 20px; /* Margen externo */
-    font-weight: bold; /* Aplica negrita */
+.nav-button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    width: 100px;
+    transition: transform 0.3s ease;
 }
 
+.nav-button:hover {
+    transform: scale(1.05);
+}
 
+.nav-icon {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 5px;
+}
 
+.nav-label {
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Carrusel */
 .carousel-container {
-    width: 1000px; /* Ancho del contenedor */
-    height: 280px; /* Altura del contenedor */
+    width: 90%;
+    max-width: 1000px;
+    height: 280px;
     overflow: hidden;
     border: 3px solid #070707;
-    position: relative;
-    margin: 0 auto; /* Centrar el contenedor */
-    max-width: 100%; /* Asegura que el contenedor no exceda el ancho de la pantalla */
-    border-radius: 15px; /* Cambia el valor según el grado de redondez que desees */
+    margin: 20px auto;
+    border-radius: 15px;
 }
 
 .carousel {
     display: flex;
-    transition: transform 2s ease; /* Suaviza la transición al mover */
-    width: 400%; /* Ajustado 4 para  imágenes */
+    transition: transform 2s ease;
+    width: 400%;
+    height: 100%;
 }
 
 .carousel img {
-    width: 33.33%; /* Cada imagen ocupa 33.33% del ancho del carrusel (100% / 3) */
-    height: auto; /* Mantiene la proporción de las imágenes */
-    object-fit: cover; /* Asegura que las imágenes no se distorsionen */
-    display: block; /* Elimina el espacio debajo de las imágenes */
+    width: 25%;
+    height: 100%;
+    object-fit: cover;
 }
 
-
-
-@keyframes slide {
-    0% { transform: translateX(0%); }
-    33% { transform: translateX(-100%); }
-    66% { transform: translateX(-200%); }
-    100% { transform: translateX(0%); }
+/* Footer */
+.main-footer {
+    background-color: #333;
+    color: white;
+    padding: 15px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
 }
 
-
-
-    
-
-
-nav ul {
+.footer-links {
+    display: flex;
+    justify-content: center;
     list-style: none;
-    padding: 0;
+    margin-bottom: 10px;
 }
 
-nav ul li {
-    display: inline;
-    margin-right: 15px;
+.footer-links li {
+    margin: 0 15px;
 }
 
-nav ul li a {
+.footer-links a {
     color: white;
     text-decoration: none;
 }
 
-section {
-    padding: 20px;
+.copyright {
+    font-size: 14px;
 }
 
+/* Media Queries para responsividad */
+@media (max-width: 768px) {
+    .header-logo {
+        width: 60px;
+        height: 60px;
+    }
+    
+    .nav-buttons-container {
+        margin-left: 60px;
+        gap: 10px;
+    }
+    
+    .nav-button {
+        width: 80px;
+    }
+    
+    .nav-icon {
+        width: 50px;
+        height: 50px;
+    }
+    
+    .nav-label {
+        font-size: 12px;
+    }
+    
+    .carousel-container {
+        height: 200px;
+    }
+}
 
+@media (max-width: 480px) {
+    .header-logo {
+        width: 50px;
+        height: 50px;
+        top: 5px;
+        left: 5px;
+    }
+    
+    .nav-buttons-container {
+        margin-left: 50px;
+        gap: 5px;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    
+    .nav-button {
+        width: 70px;
+        margin: 5px 0;
+    }
+    
+    .nav-icon {
+        width: 40px;
+        height: 40px;
+    }
+    
+    .nav-label {
+        font-size: 11px;
+    }
+    
+    .carousel-container {
+        height: 150px;
+    }
+    
+    .footer-links {
+        flex-direction: column;
+    }
+    
+    .footer-links li {
+        margin: 5px 0;
+    }
+}
+/* Estilos de la pagina inversion  */
 .tarjeta {
     display: flex;
     background-color: #ffffff;
@@ -196,50 +242,4 @@ section {
 .btn-invertir:hover {
     background-color: #0056b3;
 }
-
-
-.contenedor-principal {
-    margin-bottom: 100px; /* Ajusta este valor según el espacio que desees */
-}  
-
-    .info-container {
-    background-color: #fff;
-    border-radius: 10px;
-    padding: 20px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    margin: 20px 0;
-}
-
-.info-container h2 {
-    font-size: 24px;
-    color: #333;
-    margin-bottom: 10px;
-}
-
-.info-container h3 {
-    font-size: 20px;
-    color: #666;
-    margin-top: 15px;
-}
-
-.info-container p {
-    color: #555;
-    line-height: 1.6;
-}
-
-
-
-
-footer {
-    text-align: center;
-    background: #333;
-    color: white;
-    padding: 10px;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    z-index: 1; /* Un z-index más bajo que el contenedor principal */
-    margin-bottom: 0px; /* Espacio entre la tarjeta y el footer */
-}
-
 
