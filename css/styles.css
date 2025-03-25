@@ -226,7 +226,7 @@ body {
 }
 
 .verde {
-    color: #28a745;
+    color: #0077ff9d;
 }
 
 .btn-invertir {
@@ -242,4 +242,5 @@ body {
 .btn-invertir:hover {
     background-color: #0056b3;
 }
+
 
