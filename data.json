@@ -1,0 +1,9 @@
+{
+    "saldo": 0,
+    "inversiones": [],
+    "transacciones": [],
+    "cuentaRetiro": {
+      "direccion": "",
+      "metodo": "TRC20"
+    }
+  }
